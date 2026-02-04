@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dousan Miao | UX Designer at Google</title>
+    <meta name="description" content="Product designer with 5 years of experience, based in London, UK. Currently with Google working on Android – the most used OS on the planet." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom Fonts extracted from the source */
+      @font-face {
+        font-family: 'Coconat';
+        src: url('https://framerusercontent.com/assets/ajqZQvqHcHYfzV6VYjZCsDHG6kM.woff2');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Neue Montreal';
+        src: url('https://framerusercontent.com/assets/FcZ6VvBKLAWytbiu90yQexnjt4.woff2');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Neue Montreal';
+        src: url('https://framerusercontent.com/assets/KFUu3XNaEGEz90ZvDBi2DsnjeE.woff2');
+        font-weight: 700;
+        font-style: bold;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Inter Display';
+        src: url('https://framerusercontent.com/assets/2uIBiALfCHVpWbHqRMZutfT7giU.woff2');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* Scroll Reveal Utilities */
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      /* Stagger delays */
+      .delay-100 { transition-delay: 0.1s; }
+      .delay-200 { transition-delay: 0.2s; }
+      .delay-300 { transition-delay: 0.3s; }
+
+      /* Hide Default Cursor */
+      body, a, button {
+        cursor: none !important;
+      }
+
+      body {
+        background-color: #fefefd; /* Light mode bg token */
+        color: #14261f; /* Dark green token */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: background-color 0.5s ease, color 0.5s ease;
+      }
+      
+      /* Dark Mode Overrides */
+      html.dark body {
+        background-color: #0a0a0a;
+        color: #f0f0f0;
+      }
+      
+      html.dark ::selection {
+        background-color: #3cda64;
+        color: #000;
+      }
+
+      ::selection {
+        background-color: #61E88A;
+        color: #14261f;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            maxWidth: {
+              'site': '1400px',
+            },
+            colors: {
+              // Design Tokens from implementation.md
+              'token-dark-green': '#14261f',
+              'token-bright-green': '#3cda64',
+              'token-light-green': '#61e88a',
+              'token-light-bg': '#fefefd', // 231b17ac
+              'token-gray-bg': '#f0f0f0',  // 8b78209c
+              'token-text-gray': '#787878',
+              'token-dark-bg': '#0a0a0a',
+              'token-dark-gray': '#333333',
+            },
+            fontFamily: {
+              sans: ['Neue Montreal', 'Inter', 'sans-serif'],
+              serif: ['Coconat', 'serif'],
+              display: ['Inter Display', 'sans-serif'],
+            },
+            fontSize: {
+              'hero-desktop': ['80px', '1em'],
+              'hero-tablet': ['64px', '1em'],
+              'hero-mobile': ['40px', '1.2em'],
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
