@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import WorkGrid from './components/WorkGrid';
 import AboutSection from './components/ExperienceList';
-import Coaching from './components/Coaching';
+import DesignValues from './components/DesignValues';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 
@@ -42,22 +42,22 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen font-sans antialiased transition-colors duration-500 cursor-none bg-token-light-bg text-token-dark-green">
       <CustomCursor />
-      
+
       {/* Top Progress Bar */}
-      <div 
-        className="fixed top-0 left-0 h-1 bg-token-light-green z-[60] transition-all duration-100 ease-out" 
+      <div
+        className="fixed top-0 left-0 h-1 bg-token-light-green z-[60] transition-all duration-100 ease-out"
         style={{ width: `${scrollProgress * 100}%` }}
       />
-      
+
       <Navbar />
-      
+
       <main className="w-full overflow-hidden">
         <Hero />
         <AboutSection />
         <WorkGrid />
-        <Coaching />
+        <DesignValues />
       </main>
-      
+
       <Footer />
     </div>
   );

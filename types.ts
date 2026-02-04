@@ -19,9 +19,7 @@ export interface SocialLink {
   url: string;
 }
 
-export interface CoachingItem {
+export interface DesignValue {
   title: string;
-  price: string;
   description: string;
-  linkText: string;
 }

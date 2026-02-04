@@ -1,4 +1,4 @@
-import { Project, Experience, SocialLink, CoachingItem } from './types';
+import { Project, Experience, SocialLink, DesignValue } from './types';
 
 export const PROJECTS: Project[] = [
   {
@@ -20,47 +20,40 @@ export const PROJECTS: Project[] = [
 export const EXPERIENCE: Experience[] = [
   {
     id: 1,
-    company: "Google",
-    role: "Interaction Designer",
-    period: "Aug 2022-Today",
-    description: "Led cross-platform AI experiences and high-profile features such as Satellite SOS on Pixel 9 and Android Private Space, shaping long-term Android strategies, enhancing user engagement for billions globally, and fostering cross-functional collaboration and design community initiatives."
+    company: "Current Role",
+    role: "Product Designer",
+    period: "Present",
+    description: "Focusing on creating thoughtful and beautiful design experiences."
   },
   {
     id: 2,
-    company: "McKinsey & Company",
+    company: "Previous Studio",
     role: "Product Design Lead",
     period: "2022",
-    description: "Led design workstreams for large-scale digital transformations in the financial sector."
-  },
-  {
-    id: 3,
-    company: "McKinsey & Company",
-    role: "Senior UX Designer",
-    period: "2018-2022",
-    description: "Served high-profile clients in the retail, construction, and banking sector to identify and create new product value propositions in concept sprints to inform key business decisions."
+    description: "Led design workstreams for digital products."
   }
 ];
 
-export const COACHING: CoachingItem[] = [
+export const DESIGN_VALUES: DesignValue[] = [
   {
-    title: "1:1 Coaching Sessions",
-    price: "£89.00 / 1 hr session",
-    description: "Looking for 1:1 mentoring with your design career? I'm here to help! I've helped many people land their first job in UX over the years. Maybe you're feeling a bit lost at building your portfolio, need help prepping for your next interview/ whiteboard challenge, or just need help with some challenges you're facing at work.",
-    linkText: "BOOK A SESSION"
+    title: "User-First",
+    description: "Every decision starts with the user. Empathy is the foundation of great products."
   },
   {
-    title: "Offline Portfolio Review",
-    price: "£49.00",
-    description: "Submit your portfolio and receive a detailed written review covering structure, case study flow, design rationale, and senior-level signals. This offline review is designed for UX designers who want deep, honest feedback—not surface-level polish tips.",
-    linkText: "HOW IT WORKS"
+    title: "Simplicity",
+    description: "Less is more. Clarity over complexity. Reducing cognitive load is key."
   },
   {
-    title: "A Strategic Guide to UX Portfolios: Do this, Not that (PDF)",
-    price: "£10.00 + VAT",
-    description: "Based on experience interviewing UX designers at Google, this book breaks down the decisions that consistently help — and hurt — portfolios during hiring. This guide focuses on clarity, judgement, and intent. It shows what interviewers actually respond to, what they skim past, and what quietly raises red flags.",
-    linkText: "BUY NOW"
+    title: "Craft",
+    description: "Obsessive attention to detail. The quality of execution matters as much as the idea."
+  },
+  {
+    title: "Impact",
+    description: "Design that drives real results. solving real problems for real people."
   }
 ];
+
+
 
 export const SOCIALS: SocialLink[] = [
   { name: "LinkedIn", url: "#" },

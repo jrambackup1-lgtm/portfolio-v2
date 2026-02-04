@@ -1,3 +1,10 @@
+# Development Log
+
+## [2026-02-05] UI/UX Updates & Personalization
+- **Personalization**: Updated branding to "Jay", changed Hero tagline, and genericized Experience section.
+- **Section Update**: Removed "Coaching" section, replaced with "Design Values" (Philosophy).
+- **Cleanup**: Deleted `Coaching.tsx`.
+- **Git**: Comitted and pushed changes to remote.
 
 # Developer Log
 
